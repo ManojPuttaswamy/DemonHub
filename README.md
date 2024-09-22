@@ -7,7 +7,7 @@ This is sample code associated with [DePaul SE452](http://www.cdm.depaul.edu/aca
 
 | Member | Area  | Saying |
 | ----------- | ----------- | --- |
-| Charlie | Flight | <i>D is for Diploma</i>
+| Serhat Cingilli | Product / Inventory Management | <i></i>
 | Pat | Passenger  | <b>Carpe Diem</b>
 
 <br/>
@@ -25,9 +25,9 @@ We meet and message on Discord. Our meetings are planned for Fridays once a week
 ## Decision Made
 | # | Area  | Decision | Alternative | Rationale
 | ----------- | ----------- | --- | --- |--- |
-| 1 | IDE | Use VS Code |IntelliJ, Eclipse | Language independent editor so that it can be used in non java course
-| 2 | Dependency Management  | Maven | Gradle | Since it caused too much learn curve to come up to speed on Gradle
-| 3 | Code  | Lombok | Code template code | We have done too many template code and so don't need to learn that
-| 4 | Configuration Management  | Yaml | Properties | Easier to view groups of configuration and it is different than what we learned in other classes with property files and so using this opporutnity to learn something different
+| 1 | IDE | Use VS Code |IntelliJ, Eclipse | Great extentions available, most members have extentions and settings set up for their efficiency.
+| 2 | Dependency Management  | Maven | Gradle | Our team had the most experience with Maven, and worked with it before
+| 3 | Code  | Lombok | Code template code | Great oppurtunity to speed up our Java coding process, very integrated with Maven.
+| 4 | Configuration Management  | JSON | Properties | Easier to view groups of configuration and is easier to read and understand, most people have experience working with JSON.
 
 
