@@ -9,11 +9,12 @@ DemonHub is an exclusive e-commerce platform designed for the DePaul University 
 | ----------- | ----------- |
 | Serhat Cingilli | Product / Inventory Management |
 | Manoj Puttaswamy | Categories  |
+| Meghashree Badri Lakshmi Narasimhan | Payments |
 
 <br/>
 
 ## Conflict Resolution
-We will take a vote on conflicts, whatever the team finds as the best result, we will continue with. 
+**Dot voting**: Each team member gets a set number of "dots" (or points) to allocate to their preferred options. This allows the group to prioritize solutions or approaches collectively. 
 
 <br/>
 
