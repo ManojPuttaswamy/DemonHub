@@ -1,4 +1,4 @@
-package edu.depaul.cdm.DemonHub.Categories;
+package edu.depaul.cdm.DemonHub.categories;
 
 public class Categories {
     

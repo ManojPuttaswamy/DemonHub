@@ -1,4 +1,4 @@
-package edu.depaul.cdm.DemonHub.Payments;
+package edu.depaul.cdm.DemonHub.payments;
 
 public class Payments {
     
