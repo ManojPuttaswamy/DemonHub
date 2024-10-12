@@ -2,6 +2,7 @@
 DemonHub is an exclusive e-commerce platform designed for the DePaul University community. Offering a curated selection of products tailored to students, faculty, and alumni, this one-stop shop provides everything from textbooks and tech to DePaul-branded gear and essentials. Accessible only to DePaul members, it's your trusted source for quality items that fit your unique university lifestyle. Safe, convenient, and just for Blue Demons!
 <br>
 * Milestone 1: Our Project Prototype: [DemonHub](https://app.moqups.com/v14bDpifAPFutAIOjrU583kqOtG84MWQ/view/page/a4e233e3d?ui=0)
+* Milestone 2: Define our database strcuture and coding standards. 
 
 ## Project Members
 
