@@ -1,6 +1,5 @@
-package edu.depaul.cdm.DemonHub.Reviews;
-/************************************************************************************************************
- * This package handles Customer Reviews-related functionalities.
- * 
- * @author: Ibrahim Ibrahim
- ************************************************************************************************************/
+package edu.depaul.cdm.DemonHub.payments;
+
+public class Reviews {
+    
+}
