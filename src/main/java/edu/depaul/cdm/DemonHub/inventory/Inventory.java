@@ -22,7 +22,6 @@ public class Inventory {
     @Column(nullable = false)
     private Double price;
 
-    // Constructors
     public Inventory() {
     }
 
