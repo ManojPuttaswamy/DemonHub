@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>edu.depaul.cdm</groupId>
 	<artifactId>DemonHub</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.2</version>
 	<name>DemonHub</name>
 	<description>DemonHub Ecommerce Store</description>
 	<url/>
@@ -34,7 +34,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -45,6 +48,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+		<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.33</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		
 	</dependencies>
 
 	<build>
