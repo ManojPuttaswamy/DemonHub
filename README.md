@@ -25,6 +25,9 @@ We use Discord as our communication mechanism. Our meetings are planned for Frid
 
 <br/>
 
+## Working code screenshot
+![Working code screenshot](src/main/working_code.png)
+
 ## Decision Made
 | # | Area  | Decision | Alternative | Rationale
 | ----------- | ----------- | --- | --- |--- |
