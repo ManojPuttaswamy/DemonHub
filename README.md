@@ -36,5 +36,6 @@ We use Discord as our communication mechanism. Our meetings are planned for Frid
 | 3 | Code  | Lombok | Code template code | Great oppurtunity to speed up our Java coding process, very integrated with Maven.
 | 4 | Configuration Management  | JSON | Properties | Easier to view groups of configuration and is easier to read and understand, most people have experience working with JSON.
 | 5 | Backend  | Spring Boot | NodeJs | It simplifies backend development with minimal configuration, built-in features for rapid development, and strong support for microservices and production-ready capabilities.
+| 6 | Dependencies used | mysql-connector-java | MariaDB | MySQL Connector/J (also known as mysql-connector-java) is a Java-based driver that lets Java applications communicate with MySQL databases. Think of it as a bridge that helps your Java code talk to a MySQL database to store, retrieve, and manage data.
 
 
