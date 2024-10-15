@@ -21,7 +21,6 @@ public class Payments {
     private String orderDate;
 
     @ManyToOne
-    @Column(nullable = false, length = 100)
     private Inventory productName;
 
     @Column(nullable = false)
