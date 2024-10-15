@@ -1,4 +1,4 @@
-package edu.depaul.cdm.DemonHub.inventory;
+package edu.depaul.cdm.demonhub.inventory;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
