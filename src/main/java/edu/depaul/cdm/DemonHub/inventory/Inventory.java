@@ -1,4 +1,4 @@
-package edu.depaul.cdm.DemonHub.inventory;
+package edu.depaul.cdm.demonhub.inventory;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

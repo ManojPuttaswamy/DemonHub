@@ -1,4 +1,4 @@
-package edu.depaul.cdm.DemonHub.categories;
+package edu.depaul.cdm.demonhub.categories;
 /************************************************************************************************************
  * This package handles Categories-related functionalities.
  * 
