@@ -9,13 +9,13 @@ import lombok.*;
 @Entity
 public class Categories {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
     @Column(name = "category_name", nullable = false, length = 100)
-	private String categoryName;
- 
+    private String categoryName;
+
     @Column(nullable = false)
     private String description;
 
@@ -23,6 +23,6 @@ public class Categories {
     private java.time.LocalDateTime createdDate;
 
     @Column(nullable = false)
-	private Boolean isActive;
+    private Boolean isActive;
 
 }
