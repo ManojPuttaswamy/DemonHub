@@ -1,6 +1,6 @@
-package edu.depaul.cdm.demonhub.categories;
+package edu.depaul.cdm.demonhub.user;
 /************************************************************************************************************
- * This package handles Categories-related functionalities.
+ * This package handles User-related functionalities.
  * 
  * @author: Manoj Puttaswamy
  ************************************************************************************************************/
