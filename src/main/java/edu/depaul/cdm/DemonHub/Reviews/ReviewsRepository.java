@@ -1,4 +1,5 @@
-package edu.depaul.cdm.demonhub.reviews;
+
+package edu.depaul.cdm.DemonHub.reviews;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

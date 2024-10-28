@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub.user;
+package edu.depaul.cdm.DemonHub.user;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -28,7 +28,7 @@ public class User {
 
 
     @Lob
-    @Column(columnDefinition = "longbLob")
+    @Column(columnDefinition = "BLOB")
     private byte[] image;
     
 }

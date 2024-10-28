@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub.cart;
+package edu.depaul.cdm.DemonHub.cart;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub.cart;
+package edu.depaul.cdm.DemonHub.cart;
 /************************************************************************************************************
  * This package handles Cart functionality.
  * 

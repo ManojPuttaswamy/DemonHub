@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub;
+package edu.depaul.cdm.DemonHub;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

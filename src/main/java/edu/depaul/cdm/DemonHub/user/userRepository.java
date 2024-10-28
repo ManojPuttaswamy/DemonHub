@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub.user;
+package edu.depaul.cdm.DemonHub.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

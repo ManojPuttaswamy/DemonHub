@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub.category;
+package edu.depaul.cdm.DemonHub.category;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

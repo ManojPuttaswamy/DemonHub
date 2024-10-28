@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub.inventory;
+package edu.depaul.cdm.DemonHub.inventory;
 
 // This Part of the project is handled by
 // Serhat Cingilli
