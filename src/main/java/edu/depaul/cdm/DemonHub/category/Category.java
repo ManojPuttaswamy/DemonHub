@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub.categories;
+package edu.depaul.cdm.demonhub.category;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -7,7 +7,7 @@ import lombok.*;
 @NoArgsConstructor
 @Data
 @Entity
-public class Categories {
+public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,12 +17,7 @@ public class Categories {
     private String categoryName;
 
     @Column(nullable = false)
+    @Lob
     private String description;
-
-    @Column(nullable = false)
-    private java.time.LocalDateTime createdDate;
-
-    @Column(nullable = false)
-    private Boolean isActive;
 
 }

@@ -10,6 +10,7 @@ DemonHub is an exclusive e-commerce platform designed for the DePaul University 
 | ----------- | ----------- |
 | Serhat Cingilli | Product / Inventory Management |
 | Manoj Puttaswamy | Categories  |
+| Manoj Puttaswamy | User | 
 | Meghashree Badri Lakshmi Narasimhan | Payments |
 | Mahadev Reddy Kasireddy | Cart
 | Ibrahim Ibrahim | Reviews
