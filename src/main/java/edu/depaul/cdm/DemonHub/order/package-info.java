@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub.order;
+package edu.depaul.cdm.Demonhub.order;
 /************************************************************************************************************
  * This package handles Order-related functionalities.
  * 
