@@ -35,3 +35,6 @@ build/
 ## ds store files
 .DS_Store
 **/.DS_Store
+
+
+bin/
