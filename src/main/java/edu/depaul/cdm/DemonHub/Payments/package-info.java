@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub.payments;
+package edu.depaul.cdm.DemonHub.Payments;
 /************************************************************************************************************
  * This package handles payment-related functionalities.
  * 

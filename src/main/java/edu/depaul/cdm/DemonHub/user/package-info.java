@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub.user;
+package edu.depaul.cdm.DemonHub.user;
 /************************************************************************************************************
  * This package handles User-related functionalities.
  * 

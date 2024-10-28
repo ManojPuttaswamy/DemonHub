@@ -1,6 +1,7 @@
-package edu.depaul.cdm.demonhub.payments;
+package edu.depaul.cdm.DemonHub.Payments;
 
-import edu.depaul.cdm.demonhub.inventory.Inventory;
+
+import edu.depaul.cdm.DemonHub.inventory.Inventory;
 import jakarta.persistence.*;
 import lombok.*;
 

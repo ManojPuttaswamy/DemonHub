@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub.cart;
+package edu.depaul.cdm.DemonHub.cart;
 
 import jakarta.persistence.*;
 import java.util.ArrayList;
@@ -44,6 +44,10 @@ public class Cart {
 
     public void removeItem(CartItem item) {
         this.items.remove(item);
+    }
+
+    public void clearCart() {
+        items.clear();
     }
 
     public double getTotalPrice() {

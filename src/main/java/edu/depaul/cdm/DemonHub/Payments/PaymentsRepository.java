@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub.payments;
+package edu.depaul.cdm.DemonHub.Payments;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

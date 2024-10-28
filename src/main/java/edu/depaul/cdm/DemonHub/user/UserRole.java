@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub.user;
+package edu.depaul.cdm.DemonHub.user;
 
 public enum UserRole {
 
