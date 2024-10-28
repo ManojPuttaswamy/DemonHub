@@ -28,7 +28,7 @@ public class User {
 
 
     @Lob
-    @Column(columnDefinition = "longLob")
+    @Column(columnDefinition = "longbLob")
     private byte[] image;
     
 }

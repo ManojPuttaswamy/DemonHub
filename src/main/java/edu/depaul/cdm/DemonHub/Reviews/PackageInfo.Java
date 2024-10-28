@@ -1,4 +1,4 @@
-package edu.depaul.cdm.DemonHub.Reviews;
+package edu.depaul.cdm.demonhub.reviews;
 /************************************************************************************************************
  * This package handles Customer Reviews-related functionalities.
  * 

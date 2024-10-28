@@ -6,7 +6,7 @@ import java.util.*;
 
 
 @Repository
-public interface userRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
     Optional<User> findFirstByEmail(String email);
     
