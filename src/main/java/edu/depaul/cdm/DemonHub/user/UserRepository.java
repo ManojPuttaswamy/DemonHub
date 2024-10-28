@@ -9,5 +9,5 @@ import java.util.*;
 public interface UserRepository extends JpaRepository<User, Long> {
 
     Optional<User> findFirstByEmail(String email);
-    
+
 }

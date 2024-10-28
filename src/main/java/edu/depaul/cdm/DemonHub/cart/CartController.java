@@ -1,6 +1,7 @@
 package edu.depaul.cdm.DemonHub.cart;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,11 +9,9 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/cart")
 public class CartController {
 
-    private final CartService cartService;
+    @Autowired
+    private CartService cartService;
 
-    public CartController(CartService cartService) {
-        this.cartService = cartService;
-    }
 
     @GetMapping("/{cartId}")
     public ResponseEntity<Cart> getCart(@PathVariable Long cartId) {

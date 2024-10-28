@@ -1,11 +1,11 @@
-package edu.depaul.cdm.demonhub.order;
+package edu.depaul.cdm.DemonHub.order;
 
 import java.util.Date;
 import java.util.UUID;
 import java.util.List;
 
-import edu.depaul.cdm.demonhub.user.User;
-import edu.depaul.cdm.demonhub.cart.CartItem;
+import edu.depaul.cdm.DemonHub.user.User;
+import edu.depaul.cdm.DemonHub.cart.CartItem;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;

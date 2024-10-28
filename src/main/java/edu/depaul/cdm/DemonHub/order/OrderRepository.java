@@ -1,4 +1,4 @@
-package edu.depaul.cdm.demonhub.order;
+package edu.depaul.cdm.DemonHub.order;
 
 import java.util.List;
 

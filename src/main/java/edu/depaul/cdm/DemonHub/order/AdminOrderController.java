@@ -1,7 +1,6 @@
-package edu.depaul.cdm.demonhub.order;
+package edu.depaul.cdm.DemonHub.order;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;

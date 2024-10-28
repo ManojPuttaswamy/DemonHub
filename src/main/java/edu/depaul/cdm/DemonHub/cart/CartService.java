@@ -1,18 +1,20 @@
 package edu.depaul.cdm.DemonHub.cart;
 
 import jakarta.transaction.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 @Transactional
 public class CartService {
 
-    private final CartRepository cartRepository;
-    private final CartItemRepository cartItemRepository;
+    @Autowired
+    private CartRepository cartRepository;
 
-    public CartService(CartRepository cartRepository, CartItemRepository cartItemRepository) {
-        this.cartRepository = cartRepository;
-        this.cartItemRepository = cartItemRepository;
+    @Autowired
+    private CartItemRepository cartItemRepository;
+
+    public CartService() {
     }
 
     public Cart getCart(Long cartId) {
