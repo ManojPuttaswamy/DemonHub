@@ -31,7 +31,7 @@ We use Discord as our communication mechanism. Our meetings are planned for Frid
 MS2
 ![Working code screenshot](src/main/working_code.png)
 MS3
-![Working code screenshot](src/main/working_codeMS3.png)
+![Working code screenshot](src/main/Working_codeMS3.png)
 
 ## Decision Made
 | # | Area  | Decision | Alternative | Rationale
