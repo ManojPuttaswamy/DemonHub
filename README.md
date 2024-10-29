@@ -3,7 +3,7 @@ DemonHub is an exclusive e-commerce platform designed for the DePaul University 
 <br>
 * Milestone 1: Our Project Prototype: [DemonHub](https://app.moqups.com/v14bDpifAPFutAIOjrU583kqOtG84MWQ/view/page/a4e233e3d?ui=0)
 * Milestone 2: Define our database strcuture and coding standards. 
-* Milestone 3: Added Service and controller layers. Has temporarily changed package name DemonHub to temp. Will change the package name to demonhub soon as per the coding standards.
+* Milestone 3: Added Service and controller layers.
 
 ## Project Members
 
@@ -28,7 +28,10 @@ We use Discord as our communication mechanism. Our meetings are planned for Frid
 <br/>
 
 ## Working code screenshot
+MS2
 ![Working code screenshot](src/main/working_code.png)
+MS3
+![Working code screenshot](src/main/working_codeMS3.png)
 
 ## Decision Made
 | # | Area  | Decision | Alternative | Rationale
