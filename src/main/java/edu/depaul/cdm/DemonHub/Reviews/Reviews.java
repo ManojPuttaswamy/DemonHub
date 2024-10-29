@@ -5,27 +5,6 @@ import edu.depaul.cdm.DemonHub.inventory.Inventory;
 import jakarta.persistence.*;
 import java.util.Date;
 
-package edu.depaul.cdm.DemonHub.reviews;
-
-import edu.depaul.cdm.DemonHub.user.User;
-import edu.depaul.cdm.DemonHub.inventory.Inventory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-package edu.depaul.cdm.DemonHub.reviews;
-
-import edu.depaul.cdm.DemonHub.user.User;
-import edu.depaul.cdm.DemonHub.inventory.Inventory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-﻿
-package edu.depaul.cdm.DemonHub.reviews;
-
-import edu.depaul.cdm.DemonHub.user.User;
-import edu.depaul.cdm.DemonHub.inventory.Inventory;
-import jakarta.persistence.*;
-import java.util.Date;
-
 @Entity
 public class Reviews {
 
