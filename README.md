@@ -41,4 +41,14 @@ We use Discord as our communication mechanism. Our meetings are planned for Frid
 | 6 | Dependencies used | mysql-connector-java | MariaDB | MySQL Connector/J (also known as mysql-connector-java) is a Java-based driver that lets Java applications communicate with MySQL databases. Think of it as a bridge that helps your Java code talk to a MySQL database to store, retrieve, and manage data.
 
 
+## Ongoing Discussion
+
+*Which framework to use for implementing frontend. We have couple different options in which we are discussing and has yet to be finalised.
+The options are as follows: 
+| 1 | React |
+| 2 | Angular |
+
+
+
+
 
