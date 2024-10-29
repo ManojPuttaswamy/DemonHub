@@ -4,30 +4,20 @@ import edu.depaul.cdm.DemonHub.user.User;
 import edu.depaul.cdm.DemonHub.inventory.Inventory;
 import jakarta.persistence.*;
 import java.util.Date;
-Expand
-Reviews.java
-2 KB
+
 package edu.depaul.cdm.DemonHub.reviews;
 
 import edu.depaul.cdm.DemonHub.user.User;
 import edu.depaul.cdm.DemonHub.inventory.Inventory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-Expand
-ReviewsService.java
-2 KB
+
 package edu.depaul.cdm.DemonHub.reviews;
 
 import edu.depaul.cdm.DemonHub.user.User;
 import edu.depaul.cdm.DemonHub.inventory.Inventory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-Expand
-ReviewsController.java
-3 KB
-That's it
-You missed a call from dev that lasted a few seconds. — Today at 18:38
-ibrish started a call that lasted a minute. — Today at 18:39
 ﻿
 package edu.depaul.cdm.DemonHub.reviews;
 
