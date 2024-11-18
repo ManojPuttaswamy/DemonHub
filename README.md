@@ -4,6 +4,7 @@ DemonHub is an exclusive e-commerce platform designed for the DePaul University 
 * Milestone 1: Our Project Prototype: [DemonHub](https://app.moqups.com/v14bDpifAPFutAIOjrU583kqOtG84MWQ/view/page/a4e233e3d?ui=0)
 * Milestone 2: Define our database strcuture and coding standards. 
 * Milestone 3: Added Service and controller layers.
+* Final Submission: Improvised Controller layers and added unit tests for the integration of service and controller layers.
 
 ## Project Members
 
@@ -33,6 +34,8 @@ MS2
 ![Working code screenshot](src/main/working_code.png)
 MS3
 ![Working code screenshot](src/main/Working_codeMS3.png)
+Final Submission
+![Working code screenshot]()
 
 ## Decision Made
 | # | Area  | Decision | Alternative | Rationale
@@ -43,14 +46,10 @@ MS3
 | 4 | Configuration Management  | JSON | Properties | Easier to view groups of configuration and is easier to read and understand, most people have experience working with JSON.
 | 5 | Backend  | Spring Boot | NodeJs | It simplifies backend development with minimal configuration, built-in features for rapid development, and strong support for microservices and production-ready capabilities.
 | 6 | Dependencies used | mysql-connector-java | MariaDB | MySQL Connector/J (also known as mysql-connector-java) is a Java-based driver that lets Java applications communicate with MySQL databases. Think of it as a bridge that helps your Java code talk to a MySQL database to store, retrieve, and manage data.
-
-
-## Ongoing Discussion
-
-*Which framework to use for implementing frontend. We have couple different options in which we are discussing and has yet to be finalised.
-The options are as follows: 
-| 1 | React |
-| 2 | Angular |
+| 7 | No Aql Database | Spring Data MongoDB |  | spring-boot-starter-data-mongodb is a Spring Boot starter for integrating MongoDB. It provides out-of-the-box support for MongoDB repositories, CRUD operations, and seamless integration with Spring Data MongoDB.
+| 8 | logging | log4j |  | The log4j-core and log4j-api dependencies provide logging capabilities for Java applications. They offer a robust, high-performance logging framework with features like asynchronous logging, custom log levels, and integration with various output formats.
+| 9 | Swagger | springdoc-openapi |  | The springdoc-openapi-starter-webmvc-ui dependency integrates OpenAPI 3 with Spring Boot applications, enabling automatic API documentation generation and providing a user-friendly Swagger UI for visualizing and testing APIs.
+| 10 | Testing | mockito-junit-jupiter |  | The mockito-junit-jupiter dependency integrates Mockito with JUnit 5, enabling seamless mocking and verification of dependencies in unit tests for enhanced test isolation and accuracy.
 
 
 
