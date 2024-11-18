@@ -65,7 +65,6 @@ public class Order {
         request.setAddress(this.address);
         request.setOrderStatus(this.orderStatus);
         request.setTrackingId(this.trackingId);
-        // request.setUserName(this.user.getUserName());  To be implemented
         // request.setCartItems(this.CartItems); To be implemented
         return request;
     }
