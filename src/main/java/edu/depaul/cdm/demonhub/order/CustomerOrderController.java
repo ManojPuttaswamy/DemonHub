@@ -22,7 +22,7 @@ public class CustomerOrderController {
 
     @GetMapping("/{userId}")
     @Operation(summary = "Get all orders by user", description = "Fetches all orders for a specific user")
-    public ResponseEntity<List<OrderRequest>> getOrdersByUser(@PathVariable Long userId) {
+    public ResponseEntity<List<OrderRequest>> getOrdersByUser(@PathVariable String userId) {
         return ResponseEntity.ok(customerOrderService.getOrdersByUserId(userId));
     }
 
@@ -35,7 +35,7 @@ public class CustomerOrderController {
 
     @PostMapping("/{userId}")
     @Operation(summary = "Create a new order", description = "Creates a new order for a specific user")
-    public ResponseEntity<OrderRequest> createOrder(@RequestBody OrderRequest orderRequest, @PathVariable Long userId) {
+    public ResponseEntity<OrderRequest> createOrder(@RequestBody OrderRequest orderRequest, @PathVariable String userId) {
         OrderRequest createdOrder = customerOrderService.createOrder(orderRequest, userId);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdOrder);
     }

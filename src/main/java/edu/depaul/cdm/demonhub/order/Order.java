@@ -49,6 +49,7 @@ public class Order {
     // @OneToOne(cascade = CascadeType.MERGE)
     // @JoinColumn(name="user_id", referencedColumnName = "id")
     // private User user;
+    private String userId;
 
 
     // @OneToMany(fetch = FetchType.LAZY, mappedBy = "order")

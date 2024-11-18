@@ -31,7 +31,7 @@ public class AdminCategoryControllerTest {
         when(categoryService.getCategoryByCategoryName("Technology")).thenReturn(null);
         when(categoryService.createCategories(request)).thenReturn(new Category());
 
-        ResponseEntity<String> response = adminCategoryController.createCategories(request);
+        ResponseEntity<String> response = adminCategoryController.createCategory(request);
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals("Category created successfully", response.getBody());
@@ -44,7 +44,7 @@ public class AdminCategoryControllerTest {
 
         when(categoryService.getCategoryByCategoryName("Technology")).thenReturn(new Category());
 
-        ResponseEntity<String> response = adminCategoryController.createCategories(request);
+        ResponseEntity<String> response = adminCategoryController.createCategory(request);
 
         assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
         assertEquals("Category already exists", response.getBody());

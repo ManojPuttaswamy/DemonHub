@@ -22,9 +22,9 @@ public class Reviews {
     @Temporal(TemporalType.TIMESTAMP)
     private Date reviewDate;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    // @ManyToOne
+    // @JoinColumn(name = "user_id", nullable = false)
+    // private User user;
 
     @ManyToOne
     @JoinColumn(name = "inventory_id", nullable = false)
@@ -37,7 +37,7 @@ public class Reviews {
     public Reviews(String content, int rating, User user, Inventory inventory) {
         this.setContent(content);
         this.setRating(rating);
-        this.user = user;
+        //this.user = user;
         this.inventory = inventory;
         this.reviewDate = new Date();
     }
@@ -77,13 +77,13 @@ public class Reviews {
         this.reviewDate = reviewDate;
     }
 
-    public User getUser() {
-        return user;
-    }
+    // public User getUser() {
+    //     return user;
+    // }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
+    // public void setUser(User user) {
+    //     this.user = user;
+    // }
 
     public Inventory getInventory() {
         return inventory;
