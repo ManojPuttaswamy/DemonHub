@@ -27,9 +27,9 @@ public class DemonHubApplicationConfig {
 		@Value("${app.doc.url:Default Url}") String url
 		) {
 		return new OpenAPI().info(new Info()
-		  .title(title)
-		  .version(version)
-		  .description(description)
+		  .title("DemonHub")
+		  .version("1.0")
+		  .description("DemonHub is an exclusive e-commerce platform designed for the DePaul University community. Offering a curated selection of products tailored to students, faculty, and alumni, this one-stop shop provides everything from textbooks and tech to DePaul-branded gear and essentials. Accessible only to DePaul members, it's your trusted source for quality items that fit your unique university lifestyle. Safe, convenient, and just for Blue Demons!")
 		  .termsOfService(terms)
 		  .license(new License().name(license)
 		  .url(url)));
