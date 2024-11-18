@@ -14,10 +14,10 @@ public class Shipment {
     @Id
     private String id; // MongoDB uses String IDs
 
-    private UUID trackingId;
+    private String trackingId;
     private Long orderId; // Reference to the relational Order entity
-    private Date shippedDate;
-    private Date expectedDeliveryDate;
+    private String shippedDate;
+    private String expectedDeliveryDate;
     private String currentLocation;
     private String status; // Example: In-Transit, Delivered
 }

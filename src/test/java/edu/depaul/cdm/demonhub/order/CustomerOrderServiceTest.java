@@ -31,10 +31,27 @@ public class CustomerOrderServiceTest {
 
     @Test
     public void testGetOrdersByUser() throws Exception {
-        List<OrderRequest> orders = Arrays.asList(
-                new OrderRequest(1L, "Order 1", null, 100.0, 90.0, 10.0, "Address 1", OrderStatus.PENDING, null, "User 1"),
-                new OrderRequest(2L, "Order 2", null, 200.0, 180.0, 20.0, "Address 2", OrderStatus.PLACED, null, "User 1")
-        );
+        OrderRequest order1 = new OrderRequest();
+        order1.setId(1L);
+        order1.setOrderDescription("Order 1");
+        order1.setTotalAmount(100.0);
+        order1.setPrice(90.0);
+        order1.setDiscount(10.0);
+        order1.setAddress("Address 1");
+        order1.setOrderStatus(OrderStatus.PENDING);
+        order1.setUserName("User 1");
+
+        OrderRequest order2 = new OrderRequest();
+        order2.setId(2L);
+        order2.setOrderDescription("Order 2");
+        order2.setTotalAmount(200.0);
+        order2.setPrice(180.0);
+        order2.setDiscount(20.0);
+        order2.setAddress("Address 2");
+        order2.setOrderStatus(OrderStatus.PLACED);
+        order2.setUserName("User 1");
+
+        List<OrderRequest> orders = Arrays.asList(order1, order2);
 
         when(customerOrderService.getOrdersByUserId("User1")).thenReturn(orders);
 
@@ -47,7 +64,15 @@ public class CustomerOrderServiceTest {
 
     @Test
     public void testGetOrderById_Success() throws Exception {
-        OrderRequest order = new OrderRequest(1L, "Order 1", null, 100.0, 90.0, 10.0, "Address 1", OrderStatus.PENDING, null, "User 1");
+        OrderRequest order = new OrderRequest();
+        order.setId(1L);
+        order.setOrderDescription("Order 1");
+        order.setTotalAmount(100.0);
+        order.setPrice(90.0);
+        order.setDiscount(10.0);
+        order.setAddress("Address 1");
+        order.setOrderStatus(OrderStatus.PENDING);
+        order.setUserName("User 1");
 
         when(customerOrderService.getOrderById(1L)).thenReturn(Optional.of(order));
 
@@ -67,8 +92,23 @@ public class CustomerOrderServiceTest {
 
     @Test
     public void testCreateOrder() throws Exception {
-        OrderRequest request = new OrderRequest(null, "New Order", null, 150.0, 140.0, 10.0, "New Address", OrderStatus.PENDING, null, "User 1");
-        OrderRequest response = new OrderRequest(3L, "New Order", null, 150.0, 140.0, 10.0, "New Address", OrderStatus.PENDING, null, "User 1");
+        OrderRequest request = new OrderRequest();
+        request.setOrderDescription("New Order");
+        request.setTotalAmount(150.0);
+        request.setPrice(140.0);
+        request.setDiscount(10.0);
+        request.setAddress("New Address");
+        request.setUserName("User 1");
+
+        OrderRequest response = new OrderRequest();
+        response.setId(3L);
+        response.setOrderDescription("New Order");
+        response.setTotalAmount(150.0);
+        response.setPrice(140.0);
+        response.setDiscount(10.0);
+        response.setAddress("New Address");
+        response.setOrderStatus(OrderStatus.PENDING);
+        response.setUserName("User 1");
 
         when(customerOrderService.createOrder(Mockito.any(OrderRequest.class), Mockito.eq("User1"))).thenReturn(response);
 

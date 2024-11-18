@@ -22,6 +22,7 @@ import lombok.*;
 
 @Entity
 @Data
+@AllArgsConstructor
 @Table(name = "orders")
 public class Order {
 

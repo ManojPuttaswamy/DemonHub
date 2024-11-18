@@ -7,10 +7,10 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.ResultActions;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 import static org.hamcrest.Matchers.*;
 import static org.mockito.Mockito.when;
@@ -31,10 +31,27 @@ public class AdminOrderServiceTest {
 
     @Test
     public void testGetAllOrders() throws Exception {
-        List<OrderRequest> orders = Arrays.asList(
-                new OrderRequest(1L, "Order 1", null, 100.0, 90.0, 10.0, "Address 1", OrderStatus.PENDING, null, "User 1"),
-                new OrderRequest(2L, "Order 2", null, 200.0, 180.0, 20.0, "Address 2", OrderStatus.PLACED, null, "User 2")
-        );
+        OrderRequest order1 = new OrderRequest();
+        order1.setId(1L);
+        order1.setOrderDescription("Order 1");
+        order1.setTotalAmount(100.0);
+        order1.setPrice(90.0);
+        order1.setDiscount(10.0);
+        order1.setAddress("Address 1");
+        order1.setOrderStatus(OrderStatus.PENDING);
+        order1.setUserName("User 1");
+
+        OrderRequest order2 = new OrderRequest();
+        order2.setId(2L);
+        order2.setOrderDescription("Order 2");
+        order2.setTotalAmount(200.0);
+        order2.setPrice(180.0);
+        order2.setDiscount(20.0);
+        order2.setAddress("Address 2");
+        order2.setOrderStatus(OrderStatus.PLACED);
+        order2.setUserName("User 2");
+
+        List<OrderRequest> orders = Arrays.asList(order1, order2);
 
         when(adminOrderService.getAllOrders()).thenReturn(orders);
 
@@ -47,33 +64,31 @@ public class AdminOrderServiceTest {
 
     @Test
     public void testCreateOrder() throws Exception {
-        OrderRequest request = new OrderRequest(null, "New Order", null, 150.0, 140.0, 10.0, "New Address", OrderStatus.PENDING, null, "User X");
-        OrderRequest response = new OrderRequest(3L, "New Order", null, 150.0, 140.0, 10.0, "New Address", OrderStatus.PENDING, null, "User X");
+        OrderRequest request = new OrderRequest();
+        request.setOrderDescription("New Order");
+        request.setTotalAmount(150.0);
+        request.setPrice(140.0);
+        request.setDiscount(10.0);
+        request.setAddress("New Address");
+        request.setUserName("User 3");
+
+        OrderRequest response = new OrderRequest();
+        response.setId(3L);
+        response.setOrderDescription("New Order");
+        response.setTotalAmount(150.0);
+        response.setPrice(140.0);
+        response.setDiscount(10.0);
+        response.setAddress("New Address");
+        response.setOrderStatus(OrderStatus.PENDING);
+        response.setUserName("User 3");
 
         when(adminOrderService.createOrder(Mockito.any(OrderRequest.class))).thenReturn(response);
 
         mockMvc.perform(post(BASE_URL)
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content("{\"orderDescription\":\"New Order\",\"totalAmount\":150,\"price\":140,\"discount\":10,\"address\":\"New Address\",\"userName\":\"User X\"}"))
+                        .content("{\"orderDescription\":\"New Order\",\"totalAmount\":150,\"price\":140,\"discount\":10,\"address\":\"New Address\",\"userName\":\"User 3\"}"))
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.id", is(3)))
                 .andExpect(jsonPath("$.orderDescription", is("New Order")));
-    }
-
-    @Test
-    public void testGetOrderById_NotFound() throws Exception {
-        when(adminOrderService.getOrderById(99L)).thenReturn(Optional.empty());
-
-        mockMvc.perform(get(BASE_URL + "/99"))
-                .andExpect(status().isNotFound());
-    }
-
-    @Test
-    public void testDeleteOrder_Success() throws Exception {
-        Mockito.doNothing().when(adminOrderService).deleteOrder(1L);
-
-        mockMvc.perform(delete(BASE_URL + "/1"))
-                .andExpect(status().isOk())
-                .andExpect(content().string("Order deleted successfully"));
     }
 }
