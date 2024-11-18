@@ -15,6 +15,7 @@ DemonHub is an exclusive e-commerce platform designed for the DePaul University 
 | Meghashree Badri Lakshmi Narasimhan | Order |
 | Mahadev Reddy Kasireddy | Cart
 | Ibrahim Ibrahim | Reviews
+||
 <br/>
 
 ## Conflict Resolution
