@@ -1,34 +1,20 @@
 package edu.depaul.cdm.demonhub.user;
 
-import jakarta.persistence.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.*;
 
-@Entity
+@Document(collection = "users")
 @Data
-@Table(name = "users")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private String id;
 
-
-    @Column(nullable = false)
     private String username;
-
-    @Column(nullable = false)
     private String email;
-
-    @Column(nullable = false)
     private String password;
-
-    @Column(nullable = false)
     private UserRole userRole;
 
-
-
-    @Lob
-    @Column(columnDefinition = "BLOB")
     private byte[] image;
-    
 }
