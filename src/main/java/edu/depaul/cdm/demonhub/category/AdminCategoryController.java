@@ -74,8 +74,13 @@ public class AdminCategoryController {
         return ResponseEntity.ok("Category deleted successfully");
     }
 
-    public ResponseEntity<Category> getCategoryById(int i) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getCategoryById'");
+    @GetMapping("/{id}")
+    @Operation(summary = "Get a category by ID", description = "Fetches a category by its unique ID")
+    public ResponseEntity<Category> getCategoryById(@PathVariable Integer id) {
+        Category category = categoryService.getCategoryById(id);
+        if (category == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(category);
     }
 }
