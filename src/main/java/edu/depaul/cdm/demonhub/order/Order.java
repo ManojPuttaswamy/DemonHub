@@ -22,6 +22,8 @@ import lombok.*;
 
 @Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "orders")
 public class Order {
 
@@ -46,9 +48,10 @@ public class Order {
     private UUID trackingId;
 
 
-    @OneToOne(cascade = CascadeType.MERGE)
-    @JoinColumn(name="user_id", referencedColumnName = "id")
-    private User user;
+    // @OneToOne(cascade = CascadeType.MERGE)
+    // @JoinColumn(name="user_id", referencedColumnName = "id")
+    // private User user;
+    private String userId;
 
 
     // @OneToMany(fetch = FetchType.LAZY, mappedBy = "order")
@@ -65,7 +68,6 @@ public class Order {
         request.setAddress(this.address);
         request.setOrderStatus(this.orderStatus);
         request.setTrackingId(this.trackingId);
-        // request.setUserName(this.user.getUserName());  To be implemented
         // request.setCartItems(this.CartItems); To be implemented
         return request;
     }

@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>edu.depaul.cdm</groupId>
 	<artifactId>DemonHub</artifactId>
-	<version>0.3</version>
+	<version>1.0</version>
 	<name>DemonHub</name>
 	<description>DemonHub Ecommerce Store</description>
 	<url/>
@@ -37,6 +37,12 @@
 		</dependency>
 
 		<dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <scope>test</scope>
+    	</dependency>
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
@@ -44,6 +50,31 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+
+		<dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+
+		<dependency>
+    	<groupId>org.apache.logging.log4j</groupId>
+    	<artifactId>log4j-core</artifactId>
+    	<version>2.20.0</version>
+		</dependency>
+		<dependency>
+    	<groupId>org.apache.logging.log4j</groupId>
+    	<artifactId>log4j-api</artifactId>
+    	<version>2.20.0</version>
+		</dependency>
+		
+		<dependency>
+    	<groupId>de.flapdoodle.embed</groupId>
+    	<artifactId>de.flapdoodle.embed.mongo</artifactId>
+		<version>4.18.0</version>
+    	<scope>test</scope>
+		</dependency>
+
+		
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -52,7 +83,26 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+			<exclusions>
+            <exclusion>
+                <groupId>org.junit.vintage</groupId>
+                <artifactId>junit-vintage-engine</artifactId>
+            </exclusion>
+        	</exclusions>
 		</dependency>
+		
+		<dependency>
+    	<groupId>org.springdoc</groupId>
+    	<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    	<version>2.2.0</version>
+		</dependency>
+
+		<dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-junit-jupiter</artifactId>
+        <scope>test</scope>
+    	</dependency>
+
 		<dependency>
 		<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
