@@ -1,65 +1,37 @@
 package edu.depaul.cdm.demonhub.inventory;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Column;
+import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Schema(description = "Represents an inventory item with product details, quantity, and price")
 public class Inventory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(description = "Unique identifier of the inventory item", example = "1")
     private Long id;
 
     @Column(name = "product_name", nullable = false, length = 100)
+    @Schema(description = "Name of the product", example = "Laptop")
     private String productName;
 
     @Column(nullable = false)
+    @Schema(description = "Quantity of the product available", example = "50")
     private Integer quantity;
 
     @Column(nullable = false)
+    @Schema(description = "Price of the product", example = "999.99")
     private Double price;
-
-    public Inventory() {
-    }
 
     public Inventory(String productName, Integer quantity, Double price) {
         this.productName = productName;
         this.quantity = quantity;
-        this.price = price;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
-
-    public Integer getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
-    }
-
-    public Double getPrice() {
-        return price;
-    }
-
-    public void setPrice(Double price) {
         this.price = price;
     }
 }
